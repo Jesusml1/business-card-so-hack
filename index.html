@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="left_side"></div>
+        <div class="right_side"></div>
+        <div class="card_content">
+          <div>
+            <div class="image"></div>
+          </div>
+          <div class="card_description">
+            <div>
+              <h1 class="name">MORGAN MAXWELL</h1>
+              <h3 class="title">General Manager</h3>
+            </div>
+            <div>
+              <ul class="list">
+                <li class="list_item">
+                  <i class="icon fa-solid fa-phone"></i>
+                  <div>+123-456-7890</div>
+                </li>
+                <li class="list_item">
+                  <i class="icon fa-solid fa-envelope"></i>
+                  <div>hello@reallygreatwebsite.com</div>
+                </li>
+                <li class="list_item">
+                  <i class="icon fa-solid fa-globe"></i>
+                  <div>www.reallygreatwebsite.com</div>
+                </li>
+                <li class="list_item">
+                  <i class="icon fa-solid fa-house"></i>
+                  <div>123 Anywhere St., Any City, 
+                    <br>ST 12345</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <style>
+    .icon {
+      color: #99c5c8;
+    }
+
+    .card {
+      width: 500px;
+      height: 300px;
+      display: flex;
+      position: relative;
+    }
+
+    .card .left_side {
+      background-color: #99c5c8;
+      height: 100%;
+      width: 25%;
+    }
+
+    .card .right_side {
+      background-color: #343537;
+      height: 100%;
+      width: 77%;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card_content {
+      display: flex;
+      justify-content: center;
+      column-gap: 30px;
+      align-items: center;
+      width: 500px;
+      height: 300px;
+      color: white;
+      position: absolute;
+    }
+
+    .card_description {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    .image {
+      display: block;
+      position: relative;
+      width: 125px;
+      height: 125px;
+      border-radius: 50%;
+      background-image: url("./assets/reto_css_2.webp");
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+      outline: 2px solid white;
+      outline-offset: 6px;
+    }
+
+    .name {
+      font-family: "Hammersmith One", sans-serif;
+      font-size: 1.7rem;
+      font-weight: lighter;
+      margin: 0;
+    }
+
+    .title, .list{
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.85rem;
+    }
+
+    .title {
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .list {
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      padding-left: 0;
+    }
+
+    .list_item {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+  </style>
+</html>
